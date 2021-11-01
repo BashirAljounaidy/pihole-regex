@@ -4,7 +4,7 @@ import sqlite3
 import subprocess
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
-
+bashirlink = 'https://raw.githubusercontent.com/nocturnalarchives/BlockLists/master/regex-blacklist-special-rules.txt'
 
 def fetch_url(url):
 
@@ -36,7 +36,7 @@ def fetch_url(url):
     return response
 
 
-url_regexps_remote = 'https://raw.githubusercontent.com/mmotti/pihole-regex/master/regex.list'
+url_regexps_remote = bashirlink
 install_comment = 'github.com/mmotti/pihole-regex'
 
 cmd_restart = ['pihole', 'restartdns', 'reload']
