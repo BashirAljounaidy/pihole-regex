@@ -4,7 +4,7 @@ import sqlite3
 import subprocess
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
-bashirlink = input("Please Enter Raw data link")
+#bashirlink = input("Please Enter Raw data link")
 
 def fetch_url(url):
 
@@ -36,8 +36,7 @@ def fetch_url(url):
     return response
 
 
-#url_regexps_remote = 'https://raw.githubusercontent.com/BashirAljounaidy/pihole-regex/main/regex.list'
-url_regexps_remote = bashirlink
+url_regexps_remote = 'https://raw.githubusercontent.com/BashirAljounaidy/pihole-regex/main/regex.list'
 install_comment = 'github.com/BashirAljounaidy/pihole-regex'
 
 cmd_restart = ['pihole', 'restartdns', 'reload']
