@@ -36,7 +36,8 @@ def fetch_url(url):
     return response
 
 
-url_regexps_remote = 'https://raw.githubusercontent.com/BashirAljounaidy/pihole-regex/main/regex.list'
+#url_regexps_remote = 'https://raw.githubusercontent.com/BashirAljounaidy/pihole-regex/main/regex.list'
+url_regexps_remote = input("Please Enter Raw data link")
 install_comment = 'github.com/BashirAljounaidy/pihole-regex'
 
 cmd_restart = ['pihole', 'restartdns', 'reload']
