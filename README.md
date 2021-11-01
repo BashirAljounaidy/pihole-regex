@@ -44,3 +44,7 @@ If this script is the only thing you've added to the root user's crontab, you ca
 Otherwise, run:
 
 `sudo crontab -u root -e` and remove the three lines listed above in the install instructions.
+
+https://github.com/mmotti/pihole-regex
+https://github.com/cbuijs/accomplist/blob/8f3946d58667e6d09951a994e839f297cae95e0e/chris/regex.black
+https://github.com/nocturnalarchives/BlockLists
